@@ -410,6 +410,7 @@ address li:first-child a {
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
 .footer-social-link-box {
   margin-left: 70px;
@@ -426,6 +427,67 @@ address li:first-child a {
 .footer-social-links > svg {
   fill: #fff;
 }
+.footer-form-container {
+  position: relative;
+  margin-left: 93px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* .form-join-footer {
+  display: block;
+} */
+.footer-form-email {
+  /* appearance: none; */
+  /* background-color: transparent; */
+  /* height: 50px; */
+  /* fill: transparent; */
+  /* background: transparent; */
+  /* background: none; */
+  /* border: none; */
+  /* outline: none; */
+  width: 358px;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  color: var(--primary-title-color);
+  padding-left: 16px;
+  background-color: var(--accent-background-color);
+  margin-right: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+.form-join-footer button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form-join-footer > div {
+  display: flex;
+}
+.form-telegram-icon {
+  fill: currentColor;
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+}
+/* .form-join-footer {
+} */
+/* .form-join-footer label {
+  position: absolute;
+  left: 370px;
+  top: 86px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+} */
+
 /* ------------- Modal window backdrop ------------- */
 .backdrop {
   position: fixed;
@@ -552,9 +614,9 @@ address li:first-child a {
   color: rgba(117, 117, 117, 0.5);
 }
 .m-form-confirm-check {
-  /* appearance: none;
+  appearance: none;
   -webkit-appearance: none;
-  position: absolute; */
+  position: absolute;
 }
 .m-form-conf-contr-props {
   font-size: 14px;
@@ -578,6 +640,7 @@ address li:first-child a {
   background-repeat: no-repeat; */
 }
 .m-form-conf-contr-props::before {
+  content: "";
   display: inline-block;
   width: 16px;
   height: 15px;
@@ -591,7 +654,8 @@ address li:first-child a {
   /* background-size: contain;
   background-repeat: no-repeat; */
 }
-.m-form-confirm-check:checked + .m-form-conf-contr-props-span {
+.m-form-confirm-check:checked + .m-form-conf-contr-props-span,
+.m-form-confirm-check:checked + .m-form-conf-contr-props::before {
   background-image: url(../images/svg/form-checked-box.svg);
   background-color: var(--accent-color);
   background-size: contain;
@@ -610,6 +674,7 @@ address li:first-child a {
   margin-top: 30px;
   position: absolute;
   left: calc(50% - 100px - 40px / 2);
+
   /* margin: 0 auto; */
 
   /* justify-self: center;
