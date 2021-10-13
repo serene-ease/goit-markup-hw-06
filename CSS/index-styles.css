@@ -52,6 +52,7 @@ img {
 .effect:focus,
 .effect:hover {
   color: var(--accent-color);
+  outline: var(--accent-color);
 }
 .current::after {
   content: "";
@@ -172,6 +173,9 @@ nav a {
   width: 200px;
   border: none;
   border-radius: 4px;
+}
+.button:focus {
+  outline: 1px solid var(--accent-color);
 }
 .hero h1 {
   color: var(--third-text-color);
@@ -335,6 +339,7 @@ nav a {
 .social-links:focus {
   color: var(--third-text-color);
   background-color: var(--accent-color);
+  outline: var(--accent-color);
 }
 .social-links svg {
   fill: currentColor;
@@ -372,6 +377,7 @@ nav a {
 .clients a:hover {
   color: var(--accent-color);
   border-color: var(--accent-color);
+  outline: var(--accent-color);
 }
 .clients svg {
   width: 106px;
@@ -457,6 +463,7 @@ address li:first-child a {
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+  color: #fff;
 }
 .form-join-footer button {
   display: flex;
@@ -524,18 +531,22 @@ address li:first-child a {
   background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
+  color: #000;
+
+  width: 30px;
+  height: 30px;
+
   display: flex;
   align-items: center;
   align-content: center;
-  width: 30px;
-  height: 30px;
   position: absolute;
   top: 8px;
   right: 8px;
 }
-.close > svg {
-  width: 18px;
-  height: 18px;
+.close-btn {
+  /* width: 18px; */
+  /* height: 18px; */
+  fill: currentColor;
 }
 .form-input {
   display: block;
@@ -545,9 +556,36 @@ address li:first-child a {
   justify-items: center;
   align-items: center; */
 }
+.close-btn:hover,
+.close-btn:focus,
+.m-form-input-style:hover ~ .form-svg-l,
+.m-form-input-style:focus ~ .form-svg-l {
+  color: var(--accent-color);
+  outline: var(--accent-color);
+}
+.close-btn:hover,
+.close-btn:focus {
+  border: 1px solid var(--accent-color);
+}
+.m-form-input-style:hover,
+.m-form-input-style:focus {
+  border: 1px solid var(--accent-color);
+  outline: var(--accent-color);
+}
 .form-input > div {
   position: relative;
   margin-bottom: 28px;
+  /* display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center; */
+}
+.m-form-div-license {
+  display: inline-block;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  margin-left: 8px;
 }
 .m-form-input-style {
   color: var(--primary-text-color);

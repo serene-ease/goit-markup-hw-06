@@ -56,6 +56,7 @@ img {
 .effect:focus,
 .effect:hover {
   color: var(--accent-color);
+  outline: var(--accent-color);
 }
 .current::after {
   content: "";
@@ -66,6 +67,25 @@ img {
   height: 4px;
   border-radius: 2px;
   background-color: var(--accent-color);
+}
+.button {
+  color: var(--third-text-color);
+  background-color: var(--accent-color);
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
+  font-weight: 700;
+  font-family: inherit;
+
+  cursor: pointer;
+
+  height: 50px;
+  width: 200px;
+  border: none;
+  border-radius: 4px;
+}
+.button:focus {
+  outline: 1px solid var(--accent-color);
 }
 
 /* +++++++++++++++ header section styles +++++++++++++++ */
@@ -142,6 +162,10 @@ nav a {
 }
 .buttons {
   justify-content: center;
+}
+.buttons:focus {
+  outline: var(--accent-color);
+  border: 1px solid var(--accent-color);
 }
 .buttons li + li {
   margin-left: 8px;
@@ -263,9 +287,11 @@ address li:first-child a {
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
 .footer-social-link-box {
   margin-left: 70px;
+  margin-right: 75px;
 }
 .footer-social-link-list {
   color: #fff;
@@ -275,8 +301,6 @@ address li:first-child a {
 }
 .social-links:not(first-child) {
   margin-left: 10px;
-}
-.social-links {
 }
 .footer-social-links {
   display: flex;
@@ -299,4 +323,39 @@ address li:first-child a {
   fill: currentColor;
   width: 20px;
   height: 20px;
+}
+.footer-form-container {
+  position: relative;
+  margin-left: 93px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-form-email {
+  width: 358px;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  color: var(--primary-title-color);
+  padding-left: 16px;
+  background-color: var(--accent-background-color);
+  margin-right: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  color: #fff;
+}
+.form-join-footer button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form-join-footer > div {
+  display: flex;
+}
+.form-telegram-icon {
+  fill: currentColor;
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
 }
