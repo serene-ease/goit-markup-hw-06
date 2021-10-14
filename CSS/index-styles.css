@@ -265,7 +265,6 @@ nav a {
 
 .wrapper-features {
   position: relative;
-  /* visibility: hidden; */
 }
 
 .features li + li {
@@ -440,18 +439,7 @@ address li:first-child a {
   justify-content: center;
   align-items: center;
 }
-/* .form-join-footer {
-  display: block;
-} */
 .footer-form-email {
-  /* appearance: none; */
-  /* background-color: transparent; */
-  /* height: 50px; */
-  /* fill: transparent; */
-  /* background: transparent; */
-  /* background: none; */
-  /* border: none; */
-  /* outline: none; */
   width: 358px;
   font-size: 16px;
   line-height: calc(20 / 16);
@@ -479,22 +467,6 @@ address li:first-child a {
   height: 24px;
   margin-left: 10px;
 }
-/* .form-join-footer {
-} */
-/* .form-join-footer label {
-  position: absolute;
-  left: 370px;
-  top: 86px;
-
-  font-weight: 700;
-  font-size: 14px;
-  line-height: calc(16 / 14);
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-
-  color: #ffffff;
-} */
-
 /* ------------- Modal window backdrop ------------- */
 .backdrop {
   position: fixed;
@@ -544,17 +516,11 @@ address li:first-child a {
   right: 8px;
 }
 .close-btn {
-  /* width: 18px; */
-  /* height: 18px; */
   fill: currentColor;
 }
 .form-input {
   display: block;
   padding: 40px;
-
-  /* justify-content: center;
-  justify-items: center;
-  align-items: center; */
 }
 .close-btn:hover,
 .close-btn:focus,
@@ -562,10 +528,6 @@ address li:first-child a {
 .m-form-input-style:focus ~ .form-svg-l {
   color: var(--accent-color);
   outline: var(--accent-color);
-}
-.close-btn:hover,
-.close-btn:focus {
-  border: 1px solid var(--accent-color);
 }
 .m-form-input-style:hover,
 .m-form-input-style:focus {
@@ -575,17 +537,10 @@ address li:first-child a {
 .form-input > div {
   position: relative;
   margin-bottom: 28px;
-  /* display: flex;
-  justify-content: center;
-  justify-items: center;
-  align-items: center; */
 }
 .m-form-div-license {
-  display: inline-block;
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
   margin-left: 8px;
+  margin-bottom: 30px;
 }
 .m-form-input-style {
   color: var(--primary-text-color);
@@ -622,8 +577,6 @@ address li:first-child a {
   min-height: 120px;
   padding: 12px 16px;
   resize: none;
-  /* top: 12px;
-  left: 16px; */
 }
 .form-text-mark {
   position: absolute;
@@ -641,7 +594,6 @@ address li:first-child a {
   width: 18px;
   height: 18px;
   fill: currentColor;
-  /* z-index: 20; */
 }
 
 .form-input ::placeholder {
@@ -657,6 +609,7 @@ address li:first-child a {
   position: absolute;
 }
 .m-form-conf-contr-props {
+  /* display: flex; */
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
@@ -664,18 +617,16 @@ address li:first-child a {
   margin-bottom: 30px;
 }
 .m-form-conf-contr-props-span {
-  /* display: inline-block; */
   width: 16px;
   height: 15px;
   margin-right: 8px;
 
-  /* background-image: url(../images/svg/form-unchecked-box.svg); */
   border: #212121 solid 2px;
   border-radius: 2px;
   background-origin: border-box;
 
-  /* background-size: contain;
-  background-repeat: no-repeat; */
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .m-form-conf-contr-props::before {
   content: "";
@@ -688,9 +639,6 @@ address li:first-child a {
   border: #212121 solid 2px;
   border-radius: 2px;
   background-origin: border-box;
-
-  /* background-size: contain;
-  background-repeat: no-repeat; */
 }
 .m-form-confirm-check:checked + .m-form-conf-contr-props-span,
 .m-form-confirm-check:checked + .m-form-conf-contr-props::before {
@@ -700,25 +648,18 @@ address li:first-child a {
   background-repeat: no-repeat;
   border: none;
 }
-.form-input > a {
+.form-input a {
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
+  text-decoration: none;
   text-decoration-line: underline;
   color: var(--accent-color);
 }
+.form-input a:visited {
+  color: var(--accent-color);
+}
 .form-input .button {
-  /* margin: 0 auto; */
-  margin-top: 30px;
-  position: absolute;
-  left: calc(50% - 100px - 40px / 2);
-
-  /* margin: 0 auto; */
-
-  /* justify-self: center;
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
-  align-self: center;
-  align-content: center; */
+  display: block;
+  margin: 0 auto;
 }
